@@ -1,0 +1,274 @@
+body{
+    display: flex;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Chango', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    background: url(fundo3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;;
+    justify-content: center;
+    color:#4a435e;
+    align-items: center;
+    height: 270vh;
+    margin: 0;
+}
+.logo{
+    position: relative;
+    top: 3vh;
+    width: 15vw;
+    height: 10vh;
+    
+}
+.aba{
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #8376a3;
+    width: 90vw;
+    height: 15vh;
+    display: flex; 
+    position: absolute;
+    top: 0%;
+}
+.name-aba{
+    position: absolute;
+    left: 40vw;
+    top: 3vh;
+}
+.iconperfil{
+    background: white;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 60vw;
+    margin-left: 10px;
+    box-shadow: -7px 5px 1.5px 0px rgba(34, 24, 59, 0.438);
+    top: 7.5vh; 
+    z-index: 1;
+    cursor: pointer;
+}
+.pfrbar{
+    position: relative;
+    background: url(perfil.png);
+    z-index: 2
+}
+.perfil{ 
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+.bola{
+    position:relative;
+    left: -1vw;
+    display: flex;
+    text-align: center;
+    top: -7vh;
+    font-size: 0px;
+}
+.ball1{
+    position: relative;
+    left: 0.2vw;
+}
+.ball2{
+    position: relative;
+    left: -0.6vw;
+}
+.ball3{
+    position: relative;
+    left: -0.6vw;
+}
+.perfil:hover~.ball1{
+    transition: all 0.6s;
+    transform: translateY(-7vh);
+    font-size: 15px;
+}
+.ic2:hover~.ball2{
+    transition: all 0.6s;
+    transform: translateY(-6vh);
+    font-size: 15px;
+}
+.ic1:hover~.ball3{
+    transition: all 0.6s;
+    transform: translateY(-9.5vh);
+    font-size: 15px;
+}
+input{
+    display:none
+}
+.barraperfil {
+    background-color: #4a435e;
+    color: white;
+    border-radius: 50px;
+    box-shadow: -7px 5px 1.5px 0px rgba(34, 24, 59, 0.438);
+    width: 0px;
+    height: 0px;
+    position: relative;
+    left: 57vw;
+    top: 7.5vh; 
+    font-size:  0px;
+}
+.perfil:hover{
+opacity: 0.8;
+}
+#prf:checked~.barraperfil{
+    border-radius: 10px;
+    width: 9vw;
+    height: 22.5vh;
+    transition: all 0.5s;
+    transform: translateX(0.1vw);
+    font-size: 10px;
+}
+.pegin{
+    margin: 2vh;
+}
+.log{
+    margin-top: 45px;
+}
+a{
+    background-color: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.ic1 img{
+    position: relative;
+    width: 38px;
+    height: 38px;
+    top: 1px;
+    left: 1px;
+}
+.ic2 img{
+    position: relative;
+    width: 30.5px;
+    height: 30.5px;
+    top: 4.75px;
+    left: 3.75px;
+}
+.pp{
+    position: absolute;
+    top: 33vh;
+    left: 13vw;
+}
+.pp2{
+    position: absolute;
+    top: 120vh;
+    left: 13vw;
+}
+.pp3{
+    position: absolute;
+    top: 171vh;
+    left: 13vw;
+}
+.count-prod{
+    overflow: hidden;
+    position: absolute;
+    top:40vh;
+    background-color:#8376a38f;
+    border-radius: 10px;
+    width: 83vw;
+    height: 78vh;
+    justify-items:center;
+    box-shadow:  -9px 9px 1.5px 0px rgba(34, 24, 59, 0.438);
+    left: 9vw;
+} 
+.cp2{
+    position: absolute;
+    top:127vh;
+    left: 9vw;
+    height: 40vh;
+}
+.cp3{
+    position: absolute;
+    top:179vh;
+    left: 9vw;
+}
+.c2{
+    position: relative;
+    top: -15vh;
+}
+.comeu{
+    position: relative;
+    width: 18vw;
+    height: 25vh;
+    top: 2vh;
+    display: flex;
+    left: 1.5vw;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 1;
+    cursor: pointer;
+    margin-bottom: 0vh;
+    box-shadow: -9px 9px 1.5px 0px rgba(34, 24, 59, 0.438);
+    margin-right: 2vw;
+}
+.sei{
+    position: relative;
+    width: 18vw;
+    height: 25vh;
+    display: flex;
+    left: 2.5vw;
+    top: -15vh;
+    border-radius: 10px;
+    background-color: #4a435e;
+    margin-bottom: 0vh;
+    align-items: center;
+    box-shadow: -9px 9px 1.5px 0px rgba(34, 24, 59, 0.438);
+    object-fit: cover
+}
+.la{
+    position: relative;
+    left:1vw;
+    top:10vh;
+    color: white
+}
+.lase{
+    position: relative;
+    left:2vw;
+    top:10vh;
+    color: white
+}
+.button-delivery{
+    background-color: #8376a3;
+    height: 6vh;
+    width: 10vw;
+    border: none;
+    padding: 1.5px;
+    color: white;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+    top:130vh;
+    box-shadow:  -7px 7px 1.5px 0px rgba(34, 24, 59, 0.438);
+}
+.button-delivery h3{
+    text-decoration: none;
+    color: white;
+    padding: 1.5px;
+    font-size: 13px;
+    position: relative;
+    top: -5px;
+}
+.button-delivery:hover {
+    background-color: #4a435e;
+    cursor: hand;
+    color: white;
+    height: 6vh;
+    width: 10vw;
+    border: none;
+    border-radius: 5px;
+}
+.button-delivery a:hover{
+    text-decoration: none;
+}

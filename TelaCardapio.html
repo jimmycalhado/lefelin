@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Averia+Serif+Libre:ital@1&family=Bungee+Spice&family=Chango&family=Lato&family=Lobster&family=Oswald:wght@200;300;400&family=Playfair:ital,wght@0,400;1,300&family=Roboto+Condensed:ital,wght@1,300&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link  href="TelaCardapio.css" rel="stylesheet">
+    <title>Cardapio</title>
+</head>
+<body>
+    
+    <div class="aba">
+        <div class="restaurante">
+            <img src="logo_lefelin.png" class="logo">
+        </div>
+        <div class="name-aba">
+            <H1>Cardapio</H1>
+        </div>
+        <input type="checkbox" name="prf" id="prf" class="prf p1">
+            <label for="prf"> 
+                <div class="iconperfil ic1">
+                    <span class="pfrbar">
+                        <a  href="TelaPrincipal.html">
+                            <img src="menu.png " class="perfil ic1" >
+                            <h5  class="bola ball3">Menu Principal</h5>
+                        </a>
+                    </span>
+                </div>
+            </label>
+            <input type="checkbox" name="prf" id="prf" class="prf p2">
+            <label for="prf"> 
+                <div class="iconperfil ic2">
+                    <span class="pfrbar">
+                        <a  href="TelaReserva.html">
+                            <img src="reserva.png " class="perfil ic2">
+                            <h5  class="bola ball2">Reservar</h5>
+                        </a>
+                    </span>
+                </div>
+            </label>
+        <input type="checkbox" name="prf" id="prf" class="prf p3">
+            <label for="prf"> 
+                <div class="iconperfil">
+                    <span class="pfrbar">
+                        <img src="perfil.png " class="perfil">
+                        <h5  class="bola ball1">Perfil</h5>
+                    </span>
+                </div>
+            </label>
+            <div class="barraperfil">
+                <a href="TelaDeLogin.html">
+                    <h3 class="pegin log">Login</h3>
+                </a>
+                <a  href="TelaDeCadastro.html">
+                    <h3 class="pegin cad">Cadastro</h3>
+                </a>
+            </div>
+    </div>
+    <br><br><br>
+    <div class="pp">
+        <h3><p>Pratos Principais</p></h3>
+    </div>
+    <br>
+    <div class="count-prod cp">
+    <table>
+        <tr>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi" id="comi" @focus="atualizarInput1">
+                        <label for="comi">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="comida.jpg" class="comeu">
+                                </span>
+                         </div>
+                        </label>
+                        <div class="sei sei1">
+                            <h3 class="la">Frango Frito</h3> 
+                            <h5 class="lase">R$25,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi2" id="comi2" @focus="atualizarInput2">
+                        <label for="comi2">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="lasanha.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei2">
+                            <h3 class="la">Lasanha</h3> 
+                            <h5 class="lase">R$35,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi3" id="comi3" @focus="atualizarInput3">
+                        <label for="comi3">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="gatobolo.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei3">
+                            <h3 class="la">Pizza</h3> 
+                            <h5 class="lase">R$30,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi4" id="comi4" @focus="atualizarInput4">
+                        <label for="comi4">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="calabresa.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei4 ">
+                            <h3 class="la">Calabresa</h3> 
+                            <h5 class="lase">R$21,00</h5>
+                        </div>
+                </div>
+            </td>
+        </tr>
+        <tr >
+            <td>
+                <div class="comida c2">
+                    <input type="checkbox" name="comi5" id="comi5" @focus="atualizarInput4">
+                        <label for="comi4">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="peixe.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei4 ">
+                            <h3 class="la">Peixe</h3> 
+                            <h5 class="lase">R$30,00</h5>
+                        </div>
+                    </div>
+            </td>
+            <td>
+                <div class="comida c2">
+                    <input type="checkbox" name="comi6" id="comi6" @focus="atualizarInput4">
+                        <label for="comi4">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="bifecebolado.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei4 ">
+                            <h3 class="la">Bife Acebolado</h3> 
+                            <h5 class="lase">R$25,00</h5>
+                        </div>
+                    </div>
+            </td>
+            <td>
+                <div class="comida c2">
+                    <input type="checkbox" name="comi6" id="comi6" @focus="atualizarInput4">
+                        <label for="comi4">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="download.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei4 ">
+                            <h3 class="la">Frango Acebolado</h3> 
+                            <h5 class="lase">R$25,00</h5>
+                        </div>
+                    </div>
+            </td>
+            <td>
+                <div class="comida c2">
+                    <input type="checkbox" name="comi6" id="comi6" @focus="atualizarInput4">
+                        <label for="comi4">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="churrasco.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei4 ">
+                            <h3 class="la">Churrasco</h3> 
+                            <h5 class="lase">R$27,00</h5>
+                        </div>
+                    </div>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <br><br> 
+    <div class="pp2">
+        <h3><p>Sobremesa</p></h3>
+    </div>
+    <br>
+    <div class="count-prod cp2">
+    <table>
+        <tr>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi" id="comi" @focus="atualizarInput1">
+                        <label for="comi">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="brownie.jpg" class="comeu">
+                                </span>
+                         </div>
+                        </label>
+                        <div class="sei sei1">
+                            <h3 class="la">Brownie</h3> 
+                            <h5 class="lase">R$15,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi2" id="comi2" @focus="atualizarInput2">
+                        <label for="comi2">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="paogato.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei2">
+                            <h3 class="la">Pão Gato</h3> 
+                            <h5 class="lase">R$35,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi3" id="comi3" @focus="atualizarInput3">
+                        <label for="comi3">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="sobo.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei3">
+                            <h3 class="la">Petit Gateau</h3> 
+                            <h5 class="lase">R$20,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi4" id="comi4" @focus="atualizarInput4">
+                        <label for="comi4">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="Bolito.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei4 ">
+                            <h3 class="la">Torta</h3> 
+                            <h5 class="lase">R$22,00</h5>
+                        </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <br><br> 
+    <div class="pp3">
+        <h3><p>Bebidas</p></h3>
+    </div>
+    <br>
+    <div class="count-prod cp3">
+    <table>
+        <tr>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi" id="comi" @focus="atualizarInput1">
+                        <label for="comi">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="agua.jpg" class="comeu">
+                                </span>
+                         </div>
+                        </label>
+                        <div class="sei sei1">
+                            <h3 class="la">Água</h3> 
+                            <h5 class="lase">R$5,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi2" id="comi2" @focus="atualizarInput2">
+                        <label for="comi2">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="efanta.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei2">
+                            <h3 class="la">Coca-Cola</h3> 
+                            <h5 class="lase">R$7,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi3" id="comi3" @focus="atualizarInput3">
+                        <label for="comi3">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="ecoca.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei3">
+                            <h3 class="la">Fanta</h3> 
+                            <h5 class="lase">R$7,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi4" id="comi4" @focus="atualizarInput4">
+                        <label for="comi4">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="lana.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei4 ">
+                            <h3 class="la">Pepsi</h3> 
+                            <h5 class="lase">R$7,00</h5>
+                        </div>
+                </div>
+            </td>
+        </tr>
+        <tr >
+            <td>
+                <div class="comida c2">
+                    <input type="checkbox" name="comi5" id="comi5" @focus="atualizarInput4">
+                        <label for="comi4">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="quero.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei4 ">
+                            <h3 class="la">Café</h3> 
+                            <h5 class="lase">R$6,00</h5>
+                        </div>
+                    </div>
+            </td>
+            <td>
+                <div class="comida c2">
+                    <input type="checkbox" name="comi6" id="comi6" @focus="atualizarInput4">
+                        <label for="comi4">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="laranja.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei sei4 ">
+                            <h3 class="la">Suco</h3> 
+                            <h5 class="lase">R$9,00</h5>
+                        </div>
+                    </div>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <br><br> 
+    <a href="Teladelivery.html" class="button-delivery">
+            <h3>Peça Via Delivery</h3>
+        </button>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="TelaCardapio.js"></script>
+
+</body>
+</html>
+    
+    
+    

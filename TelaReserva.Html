@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Averia+Serif+Libre:ital@1&family=Bungee+Spice&family=Chango&family=Lato&family=Lobster&family=Oswald:wght@200;300;400&family=Playfair:ital,wght@0,400;1,300&family=Roboto+Condensed:ital,wght@1,300&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link  href="TelaReserva.css" rel="stylesheet">
+    <title>Reserva</title>
+</head>
+<body>
+    
+    <div class="aba">
+        <div class="restaurante">
+            <img src="logo_lefelin.png" class="logo">
+        </div>
+        <div class="name-aba">
+            <H1>Tela Reserva</H1>
+        </div>
+        <input type="checkbox" name="prf" id="prf" class="prf p1">
+            <label for="prf"> 
+                <div class="iconperfil ic1">
+                    <span class="pfrbar">
+                        <a  href="TelaPrincipal.html">
+                            <img src="menu.png" class="perfil ic1" >
+                            <h5  class="bola ball3">Menu Principal</h5>
+                        </a>
+                    </span>
+                </div>
+            </label>
+            <input type="checkbox" name="prf" id="prf" class="prf p2">
+            <label for="prf"> 
+                <div class="iconperfil ic2">
+                    <span class="pfrbar">
+                        <a  href="TelaCardapio.html">
+                            <img src="carrinho.png" class="perfil ic2">
+                            <h5  class="bola ball2">Cardapio</h5>
+                        </a>
+                    </span>
+                </div>
+            </label>
+        <input type="checkbox" name="prf" id="prf" class="prf p3">
+            <label for="prf"> 
+                <div class="iconperfil">
+                    <span class="pfrbar">
+                        <img src="perfil.png " class="perfil">
+                        <h5 class="bola ball1">Perfil</h5>
+                    </span>
+                </div>
+            </label>
+            <div class="barraperfil">
+                <a href="TelaDeLogin.html">
+                    <h3 class="pegin log">Login</h3>
+                </a>
+                <a  href="TelaDeCadastro.html">
+                    <h3 class="pegin cad">Cadastro</h3>
+                </a>
+            </div>
+    </div>
+    <br><br>
+    <div id="reservation-app">
+        <h1>Reserve Aqui</h1>
+      
+        <div class="weekdays">
+          <div v-for="(day, index) in daysOfWeek" :key="index" class="day" @click="selectDay(index)">
+            {{ day }}
+          </div>
+        </div>
+      
+        <div v-if="selectedDay !== null" class="timeslots">
+          <h2>Horários Disponíveis para {{ daysOfWeek[selectedDay] }}</h2>
+          <div v-for="time in timeslots" :key="time" class="timeslot" @click="selectTime(time)">
+            {{ time }}
+          </div>
+        </div>
+      
+        <div v-if="selectedTime !== null" class="reservation-details">
+          <h3>Detalhes da Reserva:</h3>
+          <p><strong>Dia:</strong> {{ daysOfWeek[selectedDay] }}</p>
+          <p><strong>Horário:</strong> {{ selectedTime }}</p>
+        </div>
+    </div>
+          
+  
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="TelaReserva.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Averia+Serif+Libre:ital@1&family=Bungee+Spice&family=Chango&family=Lato&family=Lobster&family=Oswald:wght@200;300;400&family=Playfair:ital,wght@0,400;1,300&family=Roboto+Condensed:ital,wght@1,300&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link  href="TelaPrincipal.css" rel="stylesheet">
+    <title>Menu</title>
+</head>
+<body>
+    
+    <div class="aba">
+        <div class="restaurante">
+            <img src="logo_lefelin.png" class="logo">
+        </div>
+        <div class="name-aba">
+            <H1>Tela Principal</H1>
+        </div>
+        <input type="checkbox" name="prf" id="prf" class="prf p1">
+            <label for="prf"> 
+                <div class="iconperfil ic1">
+                    <span class="pfrbar">
+                        <a  href="TelaCardapio.html">
+                            <img src="carrinho.png " class="perfil ic1" >
+                            <h5  class="bola ball3">Cardapio</h5>
+                        </a>
+                    </span>
+                </div>
+            </label>
+            <input type="checkbox" name="prf" id="prf" class="prf p2">
+            <label for="prf"> 
+                <div class="iconperfil ic2">
+                    <span class="pfrbar">
+                        <a  href="TelaReserva.html">
+                            <img src="reserva.png" class="perfil ic2">
+                            <h5  class="bola ball2">Reservar</h5>
+                        </a>
+                    </span>
+                </div>
+            </label>
+        <input type="checkbox" name="prf" id="prf" class="prf p3">
+            <label for="prf"> 
+                <div class="iconperfil">
+                    <span class="pfrbar">
+                        <img src="perfil.png " class="perfil">
+                        <h5  class="bola ball1">Perfil</h5>
+                    </span>
+                </div>
+            </label>
+            <div class="barraperfil">
+                <a href="TelaDeLogin.html">
+                    <h3 class="pegin log">Login</h3>
+                </a>
+                <a  href="TelaDeCadastro.html">
+                    <h3 class="pegin cad">Cadastro</h3>
+                </a>
+            </div>
+    </div>
+    <br><br>
+    <div class="app">
+        <div class="imgrest" id="carousel">
+            <div class="transition" id="transition">
+                <transition name="fade" mode="out-in">
+                    <img :src="imagens[indice]" :key="indice" class="slide">
+                </transition><br>
+            </div>
+            <button @click="slideAnterior" class="seta-anterior"><img src="lula.png" alt="seta anterior"></button>
+            <button @click="slideSeguinte" class="seta-seguinte"><img src="bozo.png" alt="seta seguinte"></button>
+          </div>
+    </div>
+    <div class="conhecimento">
+        <h2>Le'fellin o melhor lugar para almoçar com seu Felino</h2><br>
+        <h4 class="texto1">
+            <p>Esse restaurante inexistente é apenas um trabalhoda faculdade</p>
+            <p> em que não faz muito sentido, o restaurante era uma ideia de  </p> 
+            <p> hello kit, porém não vou fazer um site de graça pra uma empresa </p>
+            <p> bilionaria, com isso veja nossos incriveis pratos ficticios do nosso</p>
+            <p> restaurante.</p> 
+        </h4>
+    </div>
+    <div class="pratos-principais">
+        <h3 class="texto2">Pratos Principais</h3>   
+        <h5 class="texto3"><p>Aqui estão os principais pratos mais comprados aqui </p> </h5> 
+    </div>
+    <div class="count-prod">
+        <table>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi" id="comi" @focus="atualizarInput1">
+                        <label for="comi">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="comida.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei">
+                            <h3 class="la">Frango Frito</h3> 
+                            <h5 class="lase">R$25,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi2" id="comi2" @focus="atualizarInput2">
+                        <label for="comi2">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="lasanha.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei2">
+                            <h3 class="la">Lasanha</h3> 
+                            <h5 class="lase">R$35,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi3" id="comi3" @focus="atualizarInput3">
+                        <label for="comi3">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="sobo.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei3">
+                            <h3 class="la">Petigato</h3> 
+                            <h5 class="lase">R$20,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+                <div class="comida">
+                    <input type="checkbox" name="comi4" id="comi4" @focus="atualizarInput4">
+                        <label for="comi4">
+                            <div class="comid">
+                                <span class="pfrbar">
+                                    <img src="Bolito.jpg" class="comeu">
+                                </span>
+                            </div>
+                        </label>
+                        <div class="sei4">
+                            <h3 class="la"> Bolito</h3> 
+                            <h5 class="lase">R$25,00</h5>
+                        </div>
+                </div>
+            </td>
+            <td>
+            </td>
+        </table>
+    </div>
+
+    <div class="veja-mais">
+        <a href="TelaCardapio.html" class="vejam">Veja mais...</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="TelaPrincipal.js"></script>
+</body>
+</html>
